@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css" />
 
     <title>Calculator</title>
 </head>
+
 <body>
     <h1>Calculator</h1>
-    <main>
-        <div>
-            
-            <input type="number" placeholder="first number" id="AddNo1">+<input type="number" name="" id="AddNo2" placeholder="second number">
-            <span id="addResult"></span>
-            <button id="addBtn" onclick="add()">Add</button>
-        </div>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
 
-        <div>
-            <input type="number" placeholder="first number" id="SubNo1">-<input type="number" name="" id="SubNo2" placeholder="second number">
-            <span id ="subtractResult"></span>
-            <button onclick="subtract()">Subtract</button>
-        </div>
-        
-        <div>
-            <input type="number" id="MulNo1" placeholder="Fist Number" />
-            *
-            <input type="number" id="MulNo2" placeholder="Second Number"/>
-            <span id ="mulResult"></span>
+                <div class="content">
+                    <div class="inputboxs">
+                        <input type="number" placeholder="first number" id="AddNo1">
+                        +
+                        <input type="number" id="AddNo2" placeholder="second number">
+                    </div>
+                    <div id="addResult"></div>
 
-            <button onclick="Multiply()">Multiply</button>
-        </div>
-        <div>
-            <input type="number" id="DivNo1" placeholder="Fist Number" />
-            /
-            <input type="number" id="DivNo2" placeholder="Second Number"/>
-            <span id ="divResult"></span>
+                    <button id="addBtn" class="display-block" onclick="add()">Add</button>
+                </div>
+            </div>
 
-            <button onclick="Divide()">Divide</button>
+            <div class="col-md-6">
+                <input type="number" placeholder="first number" id="SubNo1">
+                -
+                <input type="number" name="" id="SubNo2" placeholder="second number">
+                <span id="subtractResult"></span>
+                <button onclick="subtract()">Subtract</button>
+            </div>
+
+            <div>
+                <input type="number" id="MulNo1" placeholder="Fist Number" />
+                *
+                <input type="number" id="MulNo2" placeholder="Second Number" />
+                <span id="mulResult"></span>
+
+                <button onclick="Multiply()">Multiply</button>
+            </div>
+
+            <div>
+                <input type="number" id="DivNo1" placeholder="Fist Number" />
+                /
+                <input type="number" id="DivNo2" placeholder="Second Number" />
+                <span id="divResult"></span>
+
+                <button onclick="Divide()">Divide</button>
+            </div>
+
         </div>
-  
     </main>
 
 </body>
