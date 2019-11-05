@@ -27,34 +27,47 @@
                     </div>
                     <div id="addResult"></div>
 
-                    <button id="addBtn" class="display-block" onclick="add()">Add</button>
+                    <button id="addBtn" class="d-block" onclick="add()">Add</button>
                 </div>
             </div>
 
             <div class="col-md-6">
-                <input type="number" placeholder="first number" id="SubNo1">
-                -
-                <input type="number" name="" id="SubNo2" placeholder="second number">
-                <span id="subtractResult"></span>
-                <button onclick="subtract()">Subtract</button>
+                <div class="content">
+                    <div class="inputboxes">
+                        <input type="number" placeholder="first number" id="SubNo1">
+                        -
+                        <input type="number" name="" id="SubNo2" placeholder="second number">
+                        <span id="subtractResult"></span>
+                    </div>
+                    <button onclick="subtract()" class="d-block">Subtract</button>
+                </div>
             </div>
 
-            <div>
-                <input type="number" id="MulNo1" placeholder="Fist Number" />
-                *
-                <input type="number" id="MulNo2" placeholder="Second Number" />
-                <span id="mulResult"></span>
+            <div class="col-md-6">
+                <div class="content">
+                    <div class="inputboxes">
+                        <input type="number" id="MulNo1" placeholder="Fist Number" />
+                        *
+                        <input type="number" id="MulNo2" placeholder="Second Number" />
+                        <span id="mulResult"></span>
+                    </div>
+                    <button onclick="Multiply()" class="d-block">Multiply</button>
 
-                <button onclick="Multiply()">Multiply</button>
+                </div>
             </div>
 
-            <div>
-                <input type="number" id="DivNo1" placeholder="Fist Number" />
-                /
-                <input type="number" id="DivNo2" placeholder="Second Number" />
-                <span id="divResult"></span>
+            <div class="col-md-6">
+                <div class="content">
+                    <div class="inputboxes">
+                        <input type="number" id="DivNo1" placeholder="Fist Number" />
+                        /
+                        <input type="number" id="DivNo2" placeholder="Second Number" />
+                        <span id="divResult"></span>
+                    </div>
+                    <button onclick="Divide()" class="d-block">Divide</button>
+                </div>
 
-                <button onclick="Divide()">Divide</button>
+
             </div>
 
         </div>
